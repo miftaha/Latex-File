@@ -1,0 +1,117 @@
+\begin{titlepage}
+
+	% Fehler "destination with the same identifier" unterdrücken...
+  \setcounter{page}{-1}
+
+	% Titelseite
+ \begin{figure}[h]
+		\begin{center}	
+  \centering
+		%\begin{minipage}[b]{62mm}
+			\includegraphics[width=40mm]{frontmatter/aau.png}
+		%\end{minipage}
+		\hspace{4cm}
+			\end{center}
+	\end{figure}
+	%\begin{figure}[h]
+		%\begin{minipage}[b]{62mm}
+			%\includegraphics[width=80mm]{layout/UHH/up-uhh-logo-u-%2010-u-farbe-u-cmyk-modus.pdf}
+		%\end{minipage}
+		%%\end{figure}
+
+	\vfill
+	
+	\begin{center}
+		% bachelor thesis
+        % master thesis
+		\noindent { \huge
+			Master Thesis \\
+		}
+		\vspace{14mm}
+		% you can manually change the title here in case your changed the title of your topic 
+        {\makeatletter
+		\noindent \textbf{\huge\@title}
+        \makeatother}
+		\vspace{60mm}	
+	\end{center}
+	
+	\vfill
+	
+	\noindent \textbf{Miftah Adem} \\
+	\noindent \rule{\textwidth}{0.4mm} 
+ 
+	\noindent{\textrm{Department of Mathematics and Computer Science}} \\
+    \noindent{\textrm{Date: 03. February 2023}} \\
+   % \noindent{\textrm{Matr.-Nr.: 3253935}} \\
+    
+
+\noindent\begin{tabular}{@{}ll}
+First Supervisor: Dr.-Ing. Binyam\\
+Second Supervisor:M.Sc. Eyob Sisay\\
+\end{tabular}
+
+
+
+\newpage
+%% second page of the thesis
+
+\setlength{\headheight}{14pt}
+ \begin{center}
+
+%% Print the title
+{\makeatletter
+\largetitlestyle\fontsize{45}{45}\selectfont\@title
+\makeatother}
+
+%% Print the subtitle
+{\makeatletter
+\ifdefvoid{\@subtitle}{}{\bigskip\fontsize{20}{20}\selectfont\@subtitle}
+\makeatother}
+
+\bigskip
+\bigskip
+
+by
+
+\bigskip
+\bigskip
+
+%% Print the name of the author
+{\makeatletter
+\largetitlestyle\fontsize{25}{25}\selectfont\@author
+\makeatother}
+
+\bigskip
+\bigskip
+
+%% Print table with names and student numbers
+\setlength\extrarowheight{2pt}
+\begin{tabular}{lc}
+ 03 February 2023\\\midrule
+     \\
+\end{tabular}
+
+\vfill
+
+%% Print some more information at the bottom
+\begin{tabular}{ll}
+    Supervisors: & Dr. Binyam \\
+                 & M.Sc. Eyob Sisay\\
+    %Matr.-Nr.: 3253935
+\end{tabular}
+
+\bigskip
+\bigskip
+
+
+
+\end{center}
+
+%% Insert the University of Hamburg logo the bottom of the page
+%\begin{tikzpicture}[remember picture, overlay]
+  %  \node[above=5mm] at (current page.south) {%
+  %      \includegraphics[width=0.4\linewidth]{layout/UHH/up-%uhh-logo-u-2010-u-farbe-u-cmyk-modus.pdf}
+  %  };
+%\end{tikzpicture}
+	
+\end{titlepage}
